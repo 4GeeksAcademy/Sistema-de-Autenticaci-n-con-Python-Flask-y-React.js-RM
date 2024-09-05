@@ -4,6 +4,7 @@ import { Context } from '../store/appContext.js'
 const ListUsers = () => {
     const { store, actions } = useContext(Context)
 
+    const token = localStorage.getItem('token')
     const userName = localStorage.getItem('name');
 
     return (

@@ -57,6 +57,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					console.log("data entrante de login: ", data)
 					if(data.access_token){
 						console.log("Bienvenid@",data.name)
+						alert('Usuario  logueado exitosamente')
 						localStorage.setItem('token',data.access_token)
 						localStorage.setItem('name', data.name)
 						localStorage.setItem('email',data.email)
